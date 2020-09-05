@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function validateForm() {
+  var x = document.forms["myForm"]["fname"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+}
+</script>
+<script>
+function validateForm() {
+  var x = document.forms["myForm"]["email"].value;
+  if (x == "") {
+    alert("mail must be filled out");
+    return false;
+  }
+}
+</script>
+<script>
+function validateForm() {
+  var x = document.forms["myForm"]["phone"].value;
+  if (x == "") {
+    alert("number must be filled out");
+    return false;
+  }
+}
+</script>
+<script>
+function Validateemail(email) 
+{
+ if (/^\w+([\.-]?\w+)@\w+([\.-]?\w+)(\.\w{2,3})+$/.test(myForm.emailAddr.value))
+  {
+    return (true)
+  }
+    alert("You have entered an invalid email address!")
+    return (false)
+}
+</script>
+
+
+
+</head>
+<body>
+
+<form name="file:///C:/Users/HP/Desktop/RD/myForm.html" action="/action_page.php" onsubmit="return validateForm()" method="post">
+  Name: <input type="text" name="fname"><br><br>
+  email: <input type="email" name="email"><br><br>
+ 
+  number : <input type="tel" pattern="^\d{10}$" required name="phone"><br><br>
+  <input type="submit" value="Submit">
+  
+</form>
+
+</body>
+</html>
